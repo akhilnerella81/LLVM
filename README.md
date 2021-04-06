@@ -75,4 +75,15 @@ Reference:https://github.com/llvm/llvmproject/blob/main/clang/include/clang/Anal
      
 ### Polymorphism :  
    When multiple functions has same name but has different parameters then these functions are said to be overloaded..This means this function is taking many forms.  
-   https://github.com/llvm/llvm-project/blob/main/clang/include/clang/Rewrite/Frontend/FrontendActions.h
+   https://github.com/llvm/llvm-project/blob/main/clang/include/clang/Rewrite/Frontend/FrontendActions.h  
+   
+## Design Patterns
+  Factory Pattern is used as a Design Pattern in LLVM Code. 
+  https://github.com/llvm/llvm-project/blob/main/clang/include/clang/Tooling/Tooling.h
+  
+  Observer Pattern,when an object is modified.its dependent objects should be notified automatically.It is also used in LLVM code.  
+  https://github.com/llvm/llvm-project/blob/main/clang/include/clang/Analysis/Analyses/LiveVariables.h
+  
+## Usage of iterators and their own data structures  
+Iterators are used  in LLVM  
+https://github.com/llvm/llvm-project/blob/main/clang/examples/PrintFunctionNames/PrintFunctionNames.cpp
