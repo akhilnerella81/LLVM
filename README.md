@@ -53,5 +53,5 @@
 
 
 ![image here](a.jpeg)  
-The above chart is of Hierarchical Inheritance of llvm:FoldingsetNode class.This is the base class and more than one derived class is created from single base class.
+This is a class hierarchy of a file in LLVM showing inheritance.This of Hierarchical Inheritance of llvm:FoldingsetNode class(base class) and more than one derived class is created from single base class.
 Reference:https://github.com/llvm/llvmproject/blob/main/clang/include/clang/Analysis/PathDiagnostic.h
