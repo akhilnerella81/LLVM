@@ -16,15 +16,15 @@
      
 * nullptr :  
  C++ 11 nullptr replaces C's NULL.nullptr is implicitly convertible and comparable to any pointer type unlike null.
-      https://github.com/llvm-mirror/clang/blob/master/include/clang/Lex/HeaderSearch.h
-* Unique_ptr :  
+      Reference:https://github.com/llvm-mirror/clang/blob/master/include/clang/Lex/HeaderSearch.h
+* unique_ptr :  
  Its a smart pointer if it goes out of scope deletes the object pointing to.  
  Reference:https://github.com/llvm-mirror/clang/blob/master/include/clang/Lex/HeaderMap.h
-* Inline Namespace:
-  Ref: https://github.com/llvm-mirror/clang/blob/master/include/clang/Lex/HeaderSearchOptions.h
-* Noexcept -   noexcept specifier tells whether a function could throw exceptions.Improved version of throw().     
-* Template -
-  This feature is used : https://github.com/llvm/llvm-project/blob/main/clang/include/clang/Lex/MacroInfo.h
+
+* noexcept :  
+ noexcept specifier tells whether a function could throw exceptions.Improved version of throw().     
+* template -  
+ Its used for generic programmming.This feature is used : https://github.com/llvm/llvm-project/blob/main/clang/include/clang/Lex/MacroInfo.h
 * constexpr :  
  Constant expression are evaluated by compiler at compiletime.Only non-complex computation are done here.We use this to indicate variable/function.
  Reference: https://github.com/llvm-mirror/clang/blob/master/include/clang/ASTMatchers/ASTMatchersInternal.h
@@ -51,7 +51,7 @@
 
 ## Class Hierarchy
 
-Reference:https://github.com/llvm/llvmproject/blob/main/clang/include/clang/Analysis/PathDiagnostic.h
+
 ![image here](a.jpeg)  
 The above chart is of Hierarchical Inheritance of llvm:FoldingsetNode class.This is the base class and more than one derived class is created from single base class.
-
+Reference:https://github.com/llvm/llvmproject/blob/main/clang/include/clang/Analysis/PathDiagnostic.h
