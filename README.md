@@ -16,10 +16,12 @@
      
 * nullptr :  
  C++ 11 nullptr replaces C's NULL.nullptr is implicitly convertible and comparable to any pointer type unlike null.
-      Reference:https://github.com/llvm-mirror/clang/blob/master/include/clang/Frontend/SerializedDiagnosticPrinter.h
+      Reference: https://github.com/llvm/llvm-project/blob/main/clang/include/clang/Lex/MacroArgs.h
+      
 * unique_ptr :  
  Its a smart pointer if it goes out of scope deletes the object pointing to.  
- Reference:https://github.com/llvm-mirror/clang/blob/master/include/clang/Lex/HeaderMap.h
+ Reference:https://github.com/llvm-mirror/clang/blob/master/include/clang/Lex/HeaderMap.h  
+ https://github.com/llvm-mirror/clang/blob/master/include/clang/Frontend/SerializedDiagnosticPrinter.h
 
 * noexcept :  
  noexcept specifier tells whether a function could throw exceptions.Improved version of throw().     
