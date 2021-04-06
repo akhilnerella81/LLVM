@@ -14,26 +14,34 @@
       This feature is used to avoid implicit conversions we make constructor explicit using explicit keyword.
         This feature is used : https://github.com/llvm/llvm-project/blob/main/clang/include/clang/Lex/MacroInfo.h
      
-* NULL ptr :
+* nullptr :
+      C++ 11 nullptrreplaces C's NULL.nullptr is implicitly convertible and comparable to any pointer type unlike null.
       https://github.com/llvm-mirror/clang/blob/master/include/clang/Lex/HeaderSearch.h
 * Unique_ptr :
     https://github.com/llvm-mirror/clang/blob/master/include/clang/Lex/HeaderMap.h
 * Inline Namespace:
   Ref: https://github.com/llvm-mirror/clang/blob/master/include/clang/Lex/HeaderSearchOptions.h
-* Noexcept -   
-       
-* Template - This feature is used : https://github.com/llvm/llvm-project/blob/main/clang/include/clang/Lex/MacroInfo.h
-* const/constexp   ASTMatchersInternal.h  
+* Noexcept -   noexcept specifier tells whether a function could throw exceptions.Improved version of throw().     
+* Template -
+  This feature is used : https://github.com/llvm/llvm-project/blob/main/clang/include/clang/Lex/MacroInfo.h
+* constexpr -
+  Constant expression are evaluated by compiler at compiletime.Only non-complex computation are done here.We use this to indicate variable/function.
     https://github.com/llvm-mirror/clang/blob/master/include/clang/ASTMatchers/ASTMatchersInternal.h
-* move https://github.com/llvm/llvm-project/blob/main/clang/lib/Frontend/ASTUnit.cpp
+* std::move -
+      Object passed to it transfers resources.
+      https://github.com/llvm/llvm-project/blob/main/clang/lib/Frontend/ASTUnit.cpp
 * Initialise list  		
 * NSMI	
-* auto https://github.com/llvm/llvm-project/blob/main/clang/lib/Frontend/ASTUnit.cpp
-* default   pragma.h
+* auto :
+      Auto variables are deduced by compiler acc. to type of which it is assigned.                 https://github.com/llvm/llvm-project/blob/main/clang/lib/Frontend/ASTUnit.cpp
+* default :
+      Provides a default implementation of a function.
       https://github.com/llvm-mirror/clang/blob/master/include/clang/Lex/Pragma.h
-* using  modulemap - headersearch.h
+* using  :
+      Similar to typedef in "C".
       https://github.com/llvm-mirror/clang/blob/master/include/clang/Lex/HeaderSearch.h
-* Rangebased loop -  CompilerInvocation.cpp
+* Rangebased for loop -  
+   For iterating over a rrange in a containerCompilerInvocation.cpp
 * Static_assert -
     https://github.com/llvm-mirror/clang/blob/master/include/clang/ASTMatchers/ASTMatchersInternal.h
 
@@ -41,3 +49,4 @@
 
 Reference:https://github.com/llvm/llvmproject/blob/main/clang/include/clang/Analysis/PathDiagnostic.h
 ![image here](a.jpeg)
+
