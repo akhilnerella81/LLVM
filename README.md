@@ -58,21 +58,19 @@ Reference:https://github.com/llvm/llvmproject/blob/main/clang/include/clang/Anal
 
 ## Design Decisions
  ### Abstraction :
-     In abstraction we make different files for defining and declaring the methods of a class such as header and cpp files.This makes user know only what the defined methods are,and the how those methods are implemented are not showed to the user.So,user can use these methods.We also use this in LLVM i.e. maintain separate files.We also use abstraction in classes that is make public and private such that user can have restricted access to the private variable(by member functions).  
-     Reference : 
+ In abstraction we make different files for defining and declaring the methods of a class such as header and cpp files.This makes user know only what the defined methods are,and  the how those methods are implemented are not showed to the user.So,user can use these methods.We also use this in LLVM i.e. maintain separate files.We also use abstraction in classes that is make public and private such that user can have restricted access to theprivate variable(by member functions).  
+ Reference :https://github.com/llvm/llvm-project/blob/main/clang/include/clang/Frontend/CompilerInvocation.h
  ### Inheritance :  
-      We use inheritance to reduce the redundancy of data.By using inheritance,A class can derive functions and variables from another class.  
-      The above class hirerachy shows the hirerachial inheritance.   Reference:https://github.com/llvm/llvmproject/blob/main/clang/include/clang/Analysis/PathDiagnostic.h
+  We use inheritance to reduce the redundancy of data.By using inheritance,A class can derive functions and variables from another class.The above class hirerachy shows the hirerachial inheritance.  
+  Reference: https://github.com/llvm/llvmproject/blob/main/clang/include/clang/Analysis/PathDiagnostic.h
  ### Modularity :  
-      We make separate modules in a code such that each module does different tasks.LLVM also uses Modularity.  
-      https://github.com/llvm/llvm-project/tree/main/clang/include/clang/Lex
+ We make separate modules in a code such that each module does different tasks.LLVM also uses Modularity.  
+ Reference:https://github.com/llvm/llvm-project/tree/main/clang/include/clang/Lex
       
  ### Encapsulation :  
-     We group the variables and member functions that manipulate these variables to make a class.  
+   We group the variables and member functions that manipulate these variables to make a class.  
+   Reference:https://github.com/llvm/llvm-project/blob/main/clang/include/clang/Lex/MacroArgs.h
      
-     
-     
-     
- ### Polymorphism :  
-     When multiple functions has same name but has different parameters then these functions are said to be overloaded..This means this function is taking many forms.  
-     https://github.com/llvm/llvm-project/blob/main/clang/include/clang/Rewrite/Frontend/FrontendActions.h
+### Polymorphism :  
+   When multiple functions has same name but has different parameters then these functions are said to be overloaded..This means this function is taking many forms.  
+   https://github.com/llvm/llvm-project/blob/main/clang/include/clang/Rewrite/Frontend/FrontendActions.h
