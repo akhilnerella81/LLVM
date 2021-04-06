@@ -85,9 +85,10 @@ Reference:https://github.com/llvm/llvmproject/blob/main/clang/include/clang/Anal
   https://github.com/llvm/llvm-project/blob/main/clang/include/clang/Analysis/Analyses/LiveVariables.h
   
 ## Usage of iterators and their own data structures  
- Iterators(iterator) are used to point at containers and const_iterator are used only to access but cannnot modify in containers.  iterator,const_iterator,reverse_iterator,const_reverse_iterator are the used iterators in the below references.  
+ Iterators(iterator) are used to point at containers and const_iterator are used only to access but cannnot modify in containers.  iterator,const_iterator,reverse_iterator,const_reverse_iterator are the used iterators in the below references of LLVM.  
  https://github.com/llvm/llvm-project/blob/main/clang/examples/PrintFunctionNames/PrintFunctionNames.cpp  
 https://github.com/llvm/llvm-project/blob/main/llvm/include/llvm/ADT/SmallVector.h  
- Datastructures of the iterators are Arrayref,ReferenceProxy,iterator_adaptor_base,pointee_iterator.  
+
+ Datastructures of the iterators are Arrayref,ReferenceProxy,iterator_adaptor_base,iterator_facade_base,pointee_iterator.  
  https://github.com/llvm/llvm-project/blob/main/llvm/include/llvm/ADT/iterator.h  
  https://github.com/llvm/llvm-project/blob/main/llvm/include/llvm/ADT/ArrayRef.h
